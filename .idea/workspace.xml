@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="487b45a3-41e9-456c-b522-f128e7c29e9d" name="Default Changelist" comment="" />
+    <list default="true" id="487b45a3-41e9-456c-b522-f128e7c29e9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/AppTest.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TeB5Ub36LOVR5FEEtqYToT3xyK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -27,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LoginTest.shouldBeAbleToLogOff">
     <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumSPautomated" />
       <extension name="coverage">
@@ -44,8 +63,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.shouldBeAbleToLogOff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumSPautomated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
+      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.LoginTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToLogOff" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.shouldLoginUsingValidCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumSPautomated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
+      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.LoginTest" />
+      <option name="METHOD_NAME" value="shouldLoginUsingValidCredentials" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.shouldNotLoginUsingInvalidCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumSPautomated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
+      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.LoginTest" />
+      <option name="METHOD_NAME" value="shouldNotLoginUsingInvalidCredentials" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTest.shouldBeAbleToLogOff" />
+        <item itemvalue="JUnit.LoginTest.shouldNotLoginUsingInvalidCredentials" />
+        <item itemvalue="JUnit.LoginTest.shouldLoginUsingValidCredentials" />
         <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
       </list>
     </recent_temporary>
@@ -62,5 +132,16 @@
       <updated>1573810497322</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

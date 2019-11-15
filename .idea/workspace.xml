@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="487b45a3-41e9-456c-b522-f128e7c29e9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/seleniumSP/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/seleniumSP/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/ProjectTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,24 +51,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.shouldBeAbleToLogOff">
-    <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="seleniumSPautomated" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
-      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.AppTest" />
-      <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.shouldBeAbleToLogOff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData">
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumSPautomated" />
       <extension name="coverage">
         <pattern>
@@ -73,8 +62,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
       <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.LoginTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToLogOff" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.shouldNotLoginUsingInvalidCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProjectTest.shouldBeAbleToCreateANewProjectWithValidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumSPautomated" />
       <extension name="coverage">
         <pattern>
@@ -104,8 +92,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
-      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.LoginTest" />
-      <option name="METHOD_NAME" value="shouldNotLoginUsingInvalidCredentials" />
+      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.ProjectTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToCreateANewProjectWithValidData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectTest.shouldNotBeAbleToCreateAProjectWithoutName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumSPautomated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
+      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.ProjectTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToCreateAProjectWithoutName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumSPautomated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
+      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.ProjectsTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToCreateANewProjectWithValidData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,10 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest.shouldBeAbleToLogOff" />
-        <item itemvalue="JUnit.LoginTest.shouldNotLoginUsingInvalidCredentials" />
+        <item itemvalue="JUnit.ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData" />
         <item itemvalue="JUnit.LoginTest.shouldLoginUsingValidCredentials" />
-        <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
+        <item itemvalue="JUnit.ProjectTest.shouldBeAbleToCreateANewProjectWithValidData" />
+        <item itemvalue="JUnit.ProjectTest.shouldNotBeAbleToCreateAProjectWithoutName" />
+        <item itemvalue="JUnit.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +159,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

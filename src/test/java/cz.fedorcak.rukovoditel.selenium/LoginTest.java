@@ -34,6 +34,11 @@ public class LoginTest {
         driver.manage().window().maximize();
     }
 
+    @After
+    public void tearDown() {
+        driver.close();
+    }
+
     @Test
     public void shouldLoginUsingValidCredentials() {
         // Given

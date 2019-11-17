@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="487b45a3-41e9-456c-b522-f128e7c29e9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData">
+  <component name="RunManager" selected="JUnit.TaskTest.shouldFilterTasksCorrectly">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumSPautomated" />
       <extension name="coverage">
@@ -89,23 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjectsTest.shouldNotBeAbleToCreateAProjectWithoutName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="seleniumSPautomated" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
-      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.ProjectsTest" />
-      <option name="METHOD_NAME" value="shouldNotBeAbleToCreateAProjectWithoutName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskTest.shouldBeAbleToCreateTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumSPautomated" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +99,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
       <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.TaskTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToCreateTask" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTest.shouldFilterTasksCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumSPautomated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
+      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.TaskTest" />
+      <option name="METHOD_NAME" value="shouldFilterTasksCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskTest.shouldFilterTasksCorrectly" />
+        <item itemvalue="JUnit.TaskTest" />
         <item itemvalue="JUnit.ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData" />
         <item itemvalue="JUnit.ProjectsTest" />
         <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.TaskTest.shouldBeAbleToCreateTask" />
-        <item itemvalue="JUnit.ProjectsTest.shouldNotBeAbleToCreateAProjectWithoutName" />
       </list>
     </recent_temporary>
   </component>
@@ -156,5 +155,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java</url>
+          <line>124</line>
+          <properties class="cz.fedorcak.rukovoditel.selenium.TaskTest" method="shouldFilterTasksCorrectly">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

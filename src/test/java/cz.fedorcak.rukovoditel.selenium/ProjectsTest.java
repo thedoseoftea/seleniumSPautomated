@@ -30,7 +30,7 @@ public class ProjectsTest {
 
     @After
     public void tearDown() {
-        // driver.close();
+        driver.close();
     }
 
     @Test
@@ -100,9 +100,17 @@ public class ProjectsTest {
         // Cleanup
         WebElement trashCanButton = driver.findElement(By.xpath("//a[@title='Delete']//i[@class='fa fa-trash-o']"));
         trashCanButton.click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Delete')]")));
-        WebElement deleteButton = driver.findElement(By.xpath("//button[contains(text(),'Delete')]"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Delete') and @type='submit']")));
+
+        if (driver.findElements( By.id("delete_confirm") ).size() != 0) {
+            WebElement deleteConfirmInput = driver.findElement(By.id("delete_confirm"));
+            deleteConfirmInput.click();
+        }
+
+        WebElement deleteButton = driver.findElement(By.xpath("//button[contains(text(),'Delete') and @type='submit']"));
         deleteButton.click();
+
+
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Reset Search')]")));
         WebElement resetSearchSpan = driver.findElement(By.xpath("//span[contains(text(),'Reset Search')]"));

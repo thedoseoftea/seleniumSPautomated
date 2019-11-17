@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="487b45a3-41e9-456c-b522-f128e7c29e9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TaskTest.shouldBeAbleToCreateTask">
+  <component name="RunManager" selected="JUnit.ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumSPautomated" />
       <extension name="coverage">
@@ -124,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskTest.shouldBeAbleToCreateTask" />
-        <item itemvalue="JUnit.ProjectsTest.shouldNotBeAbleToCreateAProjectWithoutName" />
+        <item itemvalue="JUnit.ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData" />
         <item itemvalue="JUnit.ProjectsTest" />
         <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData" />
+        <item itemvalue="JUnit.TaskTest.shouldBeAbleToCreateTask" />
+        <item itemvalue="JUnit.ProjectsTest.shouldNotBeAbleToCreateAProjectWithoutName" />
       </list>
     </recent_temporary>
   </component>

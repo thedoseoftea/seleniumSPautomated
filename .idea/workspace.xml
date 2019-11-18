@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="487b45a3-41e9-456c-b522-f128e7c29e9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_41.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/seleniumSPautomated.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/seleniumSPautomated.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/ProjectsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/ProjectsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,21 +50,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.TaskTest.shouldFilterTasksCorrectly">
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="seleniumSPautomated" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
-      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProjectsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumSPautomated" />
       <extension name="coverage">
@@ -84,6 +76,22 @@
       <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
       <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.ProjectsTest" />
       <option name="METHOD_NAME" value="shouldBeAbleToCreateANewProjectWithValidData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectsTest.shouldNotBeAbleToCreateAProjectWithoutName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumSPautomated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.fedorcak.rukovoditel.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.fedorcak.rukovoditel.selenium" />
+      <option name="MAIN_CLASS_NAME" value="cz.fedorcak.rukovoditel.selenium.ProjectsTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToCreateAProjectWithoutName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,10 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TaskTest.shouldFilterTasksCorrectly" />
-        <item itemvalue="JUnit.TaskTest" />
         <item itemvalue="JUnit.ProjectsTest.shouldBeAbleToCreateANewProjectWithValidData" />
+        <item itemvalue="JUnit.ProjectsTest.shouldNotBeAbleToCreateAProjectWithoutName" />
         <item itemvalue="JUnit.ProjectsTest" />
-        <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="JUnit.TaskTest" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +169,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java</url>
-          <line>124</line>
+          <line>125</line>
           <properties class="cz.fedorcak.rukovoditel.selenium.TaskTest" method="shouldFilterTasksCorrectly">
             <option name="EMULATED" value="true" />
           </properties>

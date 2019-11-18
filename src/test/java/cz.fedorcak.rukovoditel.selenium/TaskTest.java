@@ -33,7 +33,7 @@ public class TaskTest {
 
     @After
     public void tearDown() {
-         //driver.close();
+         driver.close();
     }
 
     @Test
@@ -44,6 +44,8 @@ public class TaskTest {
         // When
         WebElement projectsSpan = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
         projectsSpan.click();
+
+        dealWithPossibleUnresetedSearch();
         WebElement searchInput = driver.findElement(By.xpath("//input[@placeholder='Search']"));
         searchInput.sendKeys("fedorcak");
         WebElement magnifyingGlassButton = driver.findElement(By.xpath("//button[@title='Search']//i[@class='fa fa-search']"));
@@ -73,6 +75,7 @@ public class TaskTest {
 
         // Then
         // Verify if it exists
+        dealWithPossibleUnresetedSearch();
         WebElement searchInput2 = driver.findElement(By.xpath("//input[@placeholder='Search']"));
         searchInput2.sendKeys("fedj00" + uuid);
         WebElement magnifyingGlassButton2 = driver.findElement(By.xpath("//button[@title='Search']//i[@class='fa fa-search']"));
@@ -116,9 +119,7 @@ public class TaskTest {
 
         WebElement projectsSpan4 = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
         projectsSpan4.click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Reset Search')]")));
-        WebElement resetSearchSpan2 = driver.findElement(By.xpath("//span[contains(text(),'Reset Search')]"));
-        resetSearchSpan2.click();
+        dealWithPossibleUnresetedSearch();
     }
 
     @Test
@@ -126,37 +127,19 @@ public class TaskTest {
         // Given
         shouldLoginUsingValidCredentials();
 
-
-        // TODO add setting up default filter on existing fedorcak rather than on fedorcak2
-        // TODO whenever "Reset search" shows up, forgotten by a previous user, reset it
         // When
-        // First we create new project so we can use the default filter
+        // Localise the fedorcak project
         WebElement projectsSpan = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
         projectsSpan.click();
-        WebElement addProjectButton = driver.findElement(By.xpath("//button[contains(text(),'Add Project')]"));
-        addProjectButton.click();
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Save')]")));
-
-        WebElement prioritySelectElement = driver.findElement(By.name("fields[156]"));
-        Select prioritySelect = new Select(prioritySelectElement);
-        prioritySelect.selectByVisibleText("High");
-        WebElement nameInput = driver.findElement(By.name("fields[158]"));
-        String uuid = UUID.randomUUID().toString();
-        nameInput.sendKeys("fedorcak2");
-        WebElement saveButton = driver.findElement(By.xpath("//button[contains(text(),'Save')]"));
-        saveButton.click();
-
-        // Create tasks in the newly created project
-        WebElement projectsSpan2 = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
-        projectsSpan2.click();
+        dealWithPossibleUnresetedSearch();
         WebElement searchInput = driver.findElement(By.xpath("//input[@placeholder='Search']"));
-        searchInput.sendKeys("fedorcak2");
+        searchInput.sendKeys("fedorcak");
         WebElement magnifyingGlassButton = driver.findElement(By.xpath("//button[@title='Search']//i[@class='fa fa-search']"));
         magnifyingGlassButton.click();
+        WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Reset Search')]")));
-        WebElement fedorcak2A = driver.findElement(By.xpath("//a[contains(text(),'fedorcak2')]"));
-        fedorcak2A.click();
+        WebElement fedorcakA = driver.findElement(By.xpath("//a[contains(text(),'fedorcak')]"));
+        fedorcakA.click();
 
         createTask("New");
         createTask("Open");
@@ -165,6 +148,14 @@ public class TaskTest {
         createTask("Closed");
         createTask("Paid");
         createTask("Canceled");
+
+        // Setup the default filter
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Add Task')]")));
+        WebElement filterArrowButton = driver.findElement(By.xpath("//button[@class='btn dropdown-toggle btn-users-filters' and not(@title)]"));
+        filterArrowButton.click();
+        WebElement defaultFiltersA = driver.findElement(By.xpath("//a[contains(text(),'Default Filters')]"));
+        defaultFiltersA.click();
+
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Add Task')]")));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class='table table-striped table-bordered table-hover']")));
@@ -225,22 +216,7 @@ public class TaskTest {
         // Cleanup
         WebElement projectsSpan4 = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
         projectsSpan4.click();
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@title='Delete']//i[@class='fa fa-trash-o']")));
-        WebElement trashCanButton = driver.findElement(By.xpath("//a[@title='Delete']//i[@class='fa fa-trash-o']"));
-        trashCanButton.click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Delete') and @type='submit']")));
-
-        if (driver.findElements( By.id("delete_confirm") ).size() != 0) {
-            WebElement deleteConfirmInput = driver.findElement(By.id("delete_confirm"));
-            deleteConfirmInput.click();
-        }
-
-        WebElement deleteButton2 = driver.findElement(By.xpath("//button[contains(text(),'Delete') and @type='submit']"));
-        deleteButton2.click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Reset Search')]")));
-        WebElement resetSearchSpan2 = driver.findElement(By.xpath("//span[contains(text(),'Reset Search')]"));
-        resetSearchSpan2.click();
+        dealWithPossibleUnresetedSearch();
     }
 
     private void createTask(String status) {
@@ -282,6 +258,17 @@ public class TaskTest {
         passwordInput.sendKeys(validPassword);
         WebElement loginButton = driver.findElement(By.className("btn-info"));
         loginButton.click();
+    }
+
+
+    private void dealWithPossibleUnresetedSearch() {
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class='table table-striped table-bordered table-hover']")));
+        if (driver.findElements(By.xpath("//span[contains(text(),'Reset Search')]")).size() != 0) {
+            System.out.println("Resetting search");
+            WebElement resetSearchSpan = driver.findElement(By.xpath("//span[contains(text(),'Reset Search')]"));
+            resetSearchSpan.click();
+        }
     }
 
 

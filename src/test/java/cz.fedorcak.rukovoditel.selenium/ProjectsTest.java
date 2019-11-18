@@ -69,9 +69,6 @@ public class ProjectsTest {
         Select prioritySelect = new Select(prioritySelectElement);
         prioritySelect.selectByVisibleText("High");
         // Status is set to New by default
-        // WebElement statusSelectElement = driver.findElement(By.name("fields[157]"));
-        // Select statusSelect = new Select(statusSelectElement);
-        // prioritySelect.selectByVisibleText("New");
         WebElement nameInput = driver.findElement(By.name("fields[158]"));
         String uuid = UUID.randomUUID().toString();
         nameInput.sendKeys("fedj00" + uuid);
@@ -88,6 +85,9 @@ public class ProjectsTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a//span[contains(text(),'Projects')]")));
         WebElement projectsSpan2 = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
         projectsSpan2.click();
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Search']")));
+        dealWithPossibleUnresetedSearch();
         WebElement searchInput = driver.findElement(By.xpath("//input[@placeholder='Search']"));
         searchInput.sendKeys("fedj00" + uuid);
         WebElement magnifyingGlassButton = driver.findElement(By.xpath("//button[@title='Search']//i[@class='fa fa-search']"));
@@ -109,12 +109,7 @@ public class ProjectsTest {
 
         WebElement deleteButton = driver.findElement(By.xpath("//button[contains(text(),'Delete') and @type='submit']"));
         deleteButton.click();
-
-
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Reset Search')]")));
-        WebElement resetSearchSpan = driver.findElement(By.xpath("//span[contains(text(),'Reset Search')]"));
-        resetSearchSpan.click();
+        dealWithPossibleUnresetedSearch();
     }
 
 
@@ -131,5 +126,15 @@ public class ProjectsTest {
         passwordInput.sendKeys(validPassword);
         WebElement loginButton = driver.findElement(By.className("btn-info"));
         loginButton.click();
+    }
+
+    private void dealWithPossibleUnresetedSearch() {
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class='table table-striped table-bordered table-hover']")));
+        if (driver.findElements(By.xpath("//span[contains(text(),'Reset Search')]")).size() != 0) {
+            System.out.println("Resetting search");
+            WebElement resetSearchSpan = driver.findElement(By.xpath("//span[contains(text(),'Reset Search')]"));
+            resetSearchSpan.click();
+        }
     }
 }

@@ -71,7 +71,6 @@ public class LoginTest {
 
         // Then
         WebElement errorMessageDiv = driver.findElement(By.className("alert-danger"));
-        //Assert.assertEquals("No match for Username and/or Password.", errorMessageDiv.getText());
         Assert.assertTrue(errorMessageDiv.getText().contains("No match for Username and/or Password."));
     }
 

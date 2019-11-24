@@ -128,7 +128,7 @@ public class TaskTest {
         shouldLoginUsingValidCredentials();
 
         // When
-        // Localise the fedorcak project
+        // Locate the fedorcak project
         WebElement projectsSpan = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
         projectsSpan.click();
         dealWithPossibleUnresetedSearch();

@@ -41,9 +41,9 @@ public class ProjectsTest {
         // When
         WebElement projectsSpan = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
         projectsSpan.click();
+        WebDriverWait wait = new WebDriverWait(driver, 15);
         WebElement addProjectButton = driver.findElement(By.xpath("//button[contains(text(),'Add Project')]"));
         addProjectButton.click();
-        WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Save')]")));
         WebElement saveButton = driver.findElement(By.xpath("//button[contains(text(),'Save')]"));
         saveButton.click();

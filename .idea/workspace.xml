@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="487b45a3-41e9-456c-b522-f128e7c29e9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_41.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/DATA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/ProjectsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/LoginTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/ProjectsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/seleniumSPautomated-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/seleniumSPautomated-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-cz.fedorcak.rukovoditel.selenium.LoginTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-cz.fedorcak.rukovoditel.selenium.LoginTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-cz.fedorcak.rukovoditel.selenium.ProjectsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-cz.fedorcak.rukovoditel.selenium.ProjectsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-cz.fedorcak.rukovoditel.selenium.TaskTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-cz.fedorcak.rukovoditel.selenium.TaskTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/cz.fedorcak.rukovoditel.selenium.LoginTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/cz.fedorcak.rukovoditel.selenium.LoginTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/cz.fedorcak.rukovoditel.selenium.ProjectsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/cz.fedorcak.rukovoditel.selenium.ProjectsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/cz.fedorcak.rukovoditel.selenium.TaskTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/cz.fedorcak.rukovoditel.selenium.TaskTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/ProjectsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/ProjectsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cz/fedorcak/rukovoditel/selenium/TaskTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +174,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/cz.fedorcak.rukovoditel.selenium/TaskTest.java</url>
-          <line>124</line>
+          <line>114</line>
           <properties class="cz.fedorcak.rukovoditel.selenium.TaskTest" method="shouldFilterTasksCorrectly">
             <option name="EMULATED" value="true" />
           </properties>

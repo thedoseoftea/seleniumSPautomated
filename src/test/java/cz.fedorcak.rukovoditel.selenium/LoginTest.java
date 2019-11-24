@@ -1,31 +1,14 @@
 package cz.fedorcak.rukovoditel.selenium;
-import static org.junit.Assert.assertTrue;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.List;
-import java.util.UUID;
-
-import org.junit.Test;
 public class LoginTest {
     private ChromeDriver driver;
-    private String rukovoditelUrl = "https://digitalnizena.cz/rukovoditel/";
-    private String userName = "rukovoditel";
-    private String validPassword = "vse456ru";
-    private String invalidPassword = "tra-la-la";
+    private DATA data = new DATA();
 
     @Before
     public void init() {
@@ -42,13 +25,13 @@ public class LoginTest {
     @Test
     public void shouldLoginUsingValidCredentials() {
         // Given
-        driver.get(rukovoditelUrl);
+        driver.get(data.rukovoditelUrl);
 
         // When
         WebElement usernameInput = driver.findElement(By.name("username"));
-        usernameInput.sendKeys(userName);
+        usernameInput.sendKeys(data.userName);
         WebElement passwordInput = driver.findElement(By.name("password"));
-        passwordInput.sendKeys(validPassword);
+        passwordInput.sendKeys(data.validPassword);
         WebElement loginButton = driver.findElement(By.className("btn-info"));
         loginButton.click();
 
@@ -59,13 +42,13 @@ public class LoginTest {
     @Test
     public void shouldNotLoginUsingInvalidCredentials() {
         // Given
-        driver.get(rukovoditelUrl);
+        driver.get(data.rukovoditelUrl);
 
         // When
         WebElement usernameInput = driver.findElement(By.name("username"));
-        usernameInput.sendKeys(userName);
+        usernameInput.sendKeys(data.userName);
         WebElement passwordInput = driver.findElement(By.name("password"));
-        passwordInput.sendKeys(invalidPassword);
+        passwordInput.sendKeys(data.invalidPassword);
         WebElement loginButton = driver.findElement(By.className("btn-info"));
         loginButton.click();
 

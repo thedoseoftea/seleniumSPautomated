@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cz.fedorcak.rukovoditel.selenium.LoginTest" time="35.571" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cz.fedorcak.rukovoditel.selenium.LoginTest" time="35.203" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="CZ"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\jaros\AppData\Local\Temp\surefire8584125184641935186\surefirebooter2834741502658027709.jar C:\Users\jaros\AppData\Local\Temp\surefire8584125184641935186 2019-11-24T12-09-36_480-jvmRun1 surefire595121619685964860tmp surefire_07087601235990855454tmp"/>
+    <property name="sun.java.command" value="C:\Users\jaros\AppData\Local\Temp\surefire3938376655607197363\surefirebooter671717767575246327.jar C:\Users\jaros\AppData\Local\Temp\surefire3938376655607197363 2019-11-24T13-31-24_077-jvmRun1 surefire3652972271695074405tmp surefire_02747562317847843805tmp"/>
     <property name="surefire.test.class.path" value="D:\Punch of Stuff\škola\Ing\5.semester\4IT478 Automatizované funkční testování softwaru\seleniumSPautomated\target\test-classes;D:\Punch of Stuff\škola\Ing\5.semester\4IT478 Automatizované funkční testování softwaru\seleniumSPautomated\target\classes;C:\Users\jaros\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\jaros\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\jaros\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\jaros\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\jaros\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jaros\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\jaros\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\jaros\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\jaros\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\jaros\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\jaros\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\jaros\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\jaros\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\jaros"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\jaros\AppData\Local\Temp\surefire8584125184641935186\surefirebooter2834741502658027709.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jaros\AppData\Local\Temp\surefire3938376655607197363\surefirebooter671717767575246327.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="shouldNotLoginUsingInvalidCredentials" classname="cz.fedorcak.rukovoditel.selenium.LoginTest" time="12.12"/>
-  <testcase name="shouldLoginUsingValidCredentials" classname="cz.fedorcak.rukovoditel.selenium.LoginTest" time="11.497"/>
-  <testcase name="shouldBeAbleToLogOff" classname="cz.fedorcak.rukovoditel.selenium.LoginTest" time="11.92"/>
+  <testcase name="shouldNotLoginUsingInvalidCredentials" classname="cz.fedorcak.rukovoditel.selenium.LoginTest" time="12.05"/>
+  <testcase name="shouldLoginUsingValidCredentials" classname="cz.fedorcak.rukovoditel.selenium.LoginTest" time="11.163"/>
+  <testcase name="shouldBeAbleToLogOff" classname="cz.fedorcak.rukovoditel.selenium.LoginTest" time="11.933"/>
 </testsuite>

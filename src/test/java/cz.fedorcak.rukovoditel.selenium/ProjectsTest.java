@@ -17,9 +17,7 @@ import java.util.UUID;
 public class ProjectsTest {
 
     private ChromeDriver driver;
-    private String rukovoditelUrl = "https://digitalnizena.cz/rukovoditel/";
-    private String userName = "rukovoditel";
-    private String validPassword = "vse456ru";
+    private DATA data = new DATA();
 
     @Before
     public void init() {
@@ -36,7 +34,7 @@ public class ProjectsTest {
     @Test
     public void shouldNotBeAbleToCreateAProjectWithoutName() {
         // Given
-        shouldLoginUsingValidCredentials();
+        data.shouldLoginUsingValidCredentials(driver);
 
         // When
         WebElement projectsSpan = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
@@ -55,7 +53,7 @@ public class ProjectsTest {
     @Test
     public void shouldBeAbleToCreateANewProjectWithValidData() {
         // Given
-        shouldLoginUsingValidCredentials();
+        data.shouldLoginUsingValidCredentials(driver);
 
         // When
         WebElement projectsSpan = driver.findElement(By.xpath("//a//span[contains(text(),'Projects')]"));
@@ -87,7 +85,7 @@ public class ProjectsTest {
         projectsSpan2.click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Search']")));
-        dealWithPossibleUnresetedSearch();
+        data.dealWithPossibleUnresetedSearch(driver);
         WebElement searchInput = driver.findElement(By.xpath("//input[@placeholder='Search']"));
         searchInput.sendKeys("fedj00" + uuid);
         WebElement magnifyingGlassButton = driver.findElement(By.xpath("//button[@title='Search']//i[@class='fa fa-search']"));
@@ -109,32 +107,6 @@ public class ProjectsTest {
 
         WebElement deleteButton = driver.findElement(By.xpath("//button[contains(text(),'Delete') and @type='submit']"));
         deleteButton.click();
-        dealWithPossibleUnresetedSearch();
-    }
-
-
-
-
-    public void shouldLoginUsingValidCredentials() {
-        // Given
-        driver.get(rukovoditelUrl);
-
-        // When
-        WebElement usernameInput = driver.findElement(By.name("username"));
-        usernameInput.sendKeys(userName);
-        WebElement passwordInput = driver.findElement(By.name("password"));
-        passwordInput.sendKeys(validPassword);
-        WebElement loginButton = driver.findElement(By.className("btn-info"));
-        loginButton.click();
-    }
-
-    private void dealWithPossibleUnresetedSearch() {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@class='table table-striped table-bordered table-hover']")));
-        if (driver.findElements(By.xpath("//span[contains(text(),'Reset Search')]")).size() != 0) {
-            System.out.println("Resetting search");
-            WebElement resetSearchSpan = driver.findElement(By.xpath("//span[contains(text(),'Reset Search')]"));
-            resetSearchSpan.click();
-        }
+        data.dealWithPossibleUnresetedSearch(driver);
     }
 }
